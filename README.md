@@ -25,3 +25,19 @@ MANUAL ASSEMBLING:
 
 - then link it using ld, it will generate the actual executable:
   ld -o fibonacci ficonacci.o
+  
+; ADVANCED ASSEMBLING COMMAND - ASSEMBLE AND RUN WITH DYNAMIC LINKER - USE THIS COMMAND FOR THE SCRIPT:
+; nasm -f elf64 fibonacci.s &&  ld fibonacci.o -o fibonacci -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 && ./fibonacci
+
+
+EXAMPLE OUTPUT:
+
+![Selezione_195](https://user-images.githubusercontent.com/118491337/202589940-c777bdbc-14b1-4a27-8d01-85d5c5aa9d7e.png)
+
+
+
+
+
+
+
+
