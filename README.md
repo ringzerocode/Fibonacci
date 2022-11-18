@@ -4,6 +4,7 @@
 FIBONACCI SEQUENCE MADE IN ASSEMBLY x86-64
 
 @author: ringzerocode
+
 @version: 0.1
 
 
@@ -20,7 +21,7 @@ MANUAL ASSEMBLING:
 - An assembly script usually has the (.s extension)
 
 - use nasm to convert it to machine code (.o extension):
-  nasm -f elf64 filename.s
+  nasm -f elf64 fibonacci.s
 
 - then link it using ld, it will generate the actual executable:
-  ld -o helloWorld helloWorld.o
+  ld -o fibonacci ficonacci.o
