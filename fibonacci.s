@@ -9,12 +9,15 @@
 
 ; Instructions to assemble code and generate an executable file (Linux enviroment) :
 
-; MANUAL ASSEMBLING:
+; SIMPLE ASSEMBLING:
 ; An assembly script usually has the (.s extension)
 ; use nasm to convert it to machine code (.o extension):
 ; nasm -f elf64 filename.s
 ; then link it using ld, it will generate the actual executable:
 ; ld -o helloWorld helloWorld.o
+
+; ADVANCED ASSEMBLING COMMAND - ASSEMBLE AND RUN WITH DYNAMIC LINKER - USE THIS COMMAND FOR THE SCRIPT:
+; nasm -f elf64 fibonacci.s &&  ld fibonacci.o -o fibonacci -lc --dynamic-linker /lib64/ld-linux-x86-64.so.2 && ./fibonacci
 
 
 
